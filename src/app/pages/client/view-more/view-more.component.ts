@@ -1,13 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '../../../shared/shared.module';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-view-more',
   imports: [
     SharedModule,
-    CommonModule, RouterLink
+    CommonModule
   ],
   templateUrl: './view-more.component.html',
   styleUrl: './view-more.component.css'
