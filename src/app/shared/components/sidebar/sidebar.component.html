@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <!-- Botón hamburguesa (solo en móvil) -->
+        <button class="nav-menu" (click)="openSidebar()">
+            <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 ms-3" aria-current="page" routerLink="/client/home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 ms-3" routerLink="/client/viewmore">Ver más peliculas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white fw-bold me-3 ms-3" routerLink="/client/download">Ver mis descargas</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <a routerLink="/auth/login" class="login-btn me-3" type="submit">Iniciar Sesión <i
+                        class="pi pi-sign-in"></i></a>
+            </form>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Sidebar para móvil -->
+<div class="sidebar" [class.active]="sidebarNav">
+    <button class="close-btn" (click)="openSidebar()">
+        <i class="bi bi-x-lg"></i>
+    </button>
+    <ul class="nav-list">
+        <li><a routerLink="/client/home">Inicio</a></li>
+        <li><a routerLink="/client/viewmore">Ver más películas</a></li>
+        <li><a routerLink="/client/download">Ver mis descargas</a></li>
+    </ul>
+    <a routerLink="/auth/login" class="login-btn" (click)="openSidebar()">Iniciar Sesión <i class="pi pi-sign-in"></i></a>
+</div>
+
+<!-- Fondo oscuro -->
+<div class="overlay" [class.active]="sidebarNav" (click)="openSidebar()"></div>

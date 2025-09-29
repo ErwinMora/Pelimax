@@ -1,1 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+    --background: #FFFFFF;
+    --background1: #C8E4EF;
+    --primary: #0C7398;
+    --secondary: #0996AA;
+    --third: #07CDBF;
+    --four: #75FFC7;
+    --textprimary: #000000;
+    --textsecondary: #464646;
+    --textthird: #707070;
+    --forms: #d0e3eb;
+
+    /* Colores para botones */
+    --blue: #128BF5;
+    --orange: #FF9009;
+    --red: #FF1C1C;
+    --green: #53CF00;
+    --yellow: #E2D300;
+    --purplue: #E600FF;
+}
+
+html,
+body {
+    background-color: var(--background1);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--textthird);
+}
+
+/* Diseño de circulos Desktop*/
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--primary);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .5);
+    z-index: -1;
+}
+
+.span-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    top: -90px;
+    right: -90px;
+}
+
+.span-2 {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    bottom: -100px;
+    left: -100px;
+}
+
+.span-3 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    bottom: 15%;
+    right: -50px;
+}
+
+.span-4 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    bottom: 44%;
+    right: 34%;
+}
+
+.span-5 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    top: 13%;
+    left: 45%;
+}
+
+.span-6 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    top: 0;
+    left: 3%;
+}
+
+.span-7 {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    top: 37%;
+    left: 29.7%;
+}
+
+.span-8 {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    bottom: 27%;
+    left: 38.4%;
+}

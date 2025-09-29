@@ -1,0 +1,46 @@
+<div class="login-view">
+    <div class="login-cont">
+        <h1>Bienvenido a PeliMax</h1>
+        <form class="login-form" action="">
+            <!-- Campo para ingresar correo -->
+            <div class="form-mail">
+                <label for="">Correo: </label>
+                <p-inputgroup>
+                    <p-inputgroup-addon>
+                        <i class="pi pi-envelope"></i>
+                    </p-inputgroup-addon>
+                    <input pInputText placeholder="Ingresa tu correo electronico" />
+                </p-inputgroup>
+            </div>
+
+            <!-- Campo para ingresar contraseña -->
+            <div class="form-pass">
+                <label for="">Contraseña: </label>
+                <p-inputgroup>
+                    <p-inputgroup-addon>
+                        <i class="pi pi-lock"></i>
+                    </p-inputgroup-addon>
+                    <input pInputText placeholder="Ingresa tu contraseña" type="password" />
+                </p-inputgroup>
+            </div>
+            <div class="form-footer">
+                <button>Iniciar Sesión <i class="pi pi-sign-in"></i></button>
+                <a class="recovery-pass" href="">¿Olvidate tu contraseña?</a>
+                <p>No tienes una cuenta?
+                    <a class="register-login" routerLink="/auth/register">Regístrate</a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+    <div class="container-circle">
+        <span class="circle span-1"></span>
+        <span class="circle span-2"></span>
+        <span class="circle span-3"></span>
+        <span class="circle span-4"></span>
+        <span class="circle span-5"></span>
+        <span class="circle span-6"></span>
+        <span class="circle span-7"></span>
+        <span class="circle span-8"></span>
+    </div>
+</div>
